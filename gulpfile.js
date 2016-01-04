@@ -7,7 +7,9 @@ var jshint = require('gulp-jshint');
 var lesshint = require('gulp-lesshint');
 var watch = require('gulp-watch');
 
-gulp.task('default', ['jshint','lesshint']);
+gulp.task('travis', ['jshint','lesshint']);
+
+gulp.task('default', ['watch']);
 
 gulp.task('less', function () {
     return gulp.src('src/less/**/*.less')
