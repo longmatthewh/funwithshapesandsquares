@@ -22,5 +22,5 @@
   // ENVIRONMENTS
   "browser" : true,
   "devel" : true,
-  "esversion" : 6
+  "esnext" : 6
 }
