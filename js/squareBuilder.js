@@ -1,1 +1,1 @@
-function buildSquares(){function e(){var e=Math.floor(Math.random()*d)+1,a=n+e,t=document.createElement(r);t.className=a+" "+o,document.body.appendChild(t)}for(var a=220,d=10,n="speed_",o="square",r="div",t=0;a>t;t++)e()}
+"use strict";function buildSquares(){function e(){var e=Math.floor(Math.random()*t)+1,a=d+e,r=document.createElement(o);r.className=a+" "+n,document.body.appendChild(r)}for(var a=220,t=10,d="speed_",n="square",o="div",r=0;a>r;r++)e()}
