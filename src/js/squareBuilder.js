@@ -23,10 +23,14 @@ function buildSquares() {
     function assignFocus() {
         var randomSquareIdx = randomNumber(SQUARE_COUNT - SQUARE_PADDING);
         var randomSquare = document.querySelectorAll(SQUARE_CLASS_SELECTOR)[randomSquareIdx];
-        randomSquare.focus();
+        selectSquare(randomSquare);
     }
 
     function randomNumber(max) {
         return Math.floor(Math.random() * max);
+    }
+
+    function selectSquare(square) {
+        square.className = square.className + ' selected';
     }
 }
