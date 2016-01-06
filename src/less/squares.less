@@ -6,12 +6,19 @@ body {
 }
 
 .square {
-  animation-name: pulse;
+  animation-name: pulseRed;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
   width: 5vw;
   height: 10vh;
   float: left;
+}
+
+.square:focus, .square:hover {
+  animation-name: pulseBlue;
+  animation-duration: 1s;
+  border: 0;
+  outline: 0;
 }
 
 @media (min-width: 700px) and (orientation: portrait) {
@@ -64,7 +71,7 @@ body {
   }
 }
 
-@keyframes pulse {
+@keyframes pulseRed {
   0%,
   100% {
     background: hsl(0,100%,30%);
@@ -72,6 +79,17 @@ body {
 
   50% {
     background: hsl(0,100%,60%);
+  }
+}
+
+@keyframes pulseBlue {
+  0%,
+  100% {
+    background: hsl(240, 100%, 20%)
+  }
+
+  50% {
+    background: hsl(240, 100%, 80%);
   }
 }
 
