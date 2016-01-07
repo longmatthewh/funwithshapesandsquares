@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html,
 body {
   margin: 0;
@@ -22,8 +29,9 @@ body {
 }
 
 .selected {
-  background:#000;
-  animation-delay: 3s;
+  background: hsl(240, 100%, 40%);
+  border: 5px solid #fff;
+  animation-delay: 2s;
 }
 
 @media (min-width: 700px) and (orientation: portrait) {
@@ -80,21 +88,25 @@ body {
   0%,
   100% {
     background: hsl(0,100%,30%);
+    border:0;
   }
 
   50% {
     background: hsl(0,100%,60%);
+    border:0;
   }
 }
 
 @keyframes pulseBlue {
   0%,
   100% {
-    background: hsl(240, 100%, 20%)
+    background: hsl(240, 100%, 20%);
+    border:0;
   }
 
   50% {
     background: hsl(240, 100%, 80%);
+    border:0;
   }
 }
 
