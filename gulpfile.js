@@ -14,7 +14,9 @@ gulp.task('default', ['watch']);
 gulp.task('less', function () {
     return gulp.src('src/less/**/*.less')
         .pipe(less())
-        .pipe(nano())
+        .pipe(nano({
+            autoprefixer : {add : 'true'}
+        }))
         .pipe(gulp.dest('css'));
 });
 
